@@ -127,13 +127,12 @@ public void fillForm(WebDriver driver) {
 
  public static void main(String[] args) {
  // TODO Auto-generated method stub
- WebDriver driver;
  try {
 	System.setProperty("webdriver.chrome.driver","//Users//samrudhsharma//chromedriver");
-	 driver = new ChromeDriver();
-	 driver.manage().window().maximize();
-	 Bot b = new Bot();
-	 b.fillForm(driver);
+	WebDriver driver = new ChromeDriver();
+    driver.manage().window().maximize();
+    Bot b = new Bot();
+	b.fillForm(driver);
  } catch (Exception e) {
 	e.printStackTrace();
  }		        
