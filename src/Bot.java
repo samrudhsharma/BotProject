@@ -18,7 +18,7 @@ import java.util.TimerTask;
 public class Bot {
 
 public void fillForm(WebDriver driver) {
- int MINUTES = 2; // The delay in minutes
+ int minutes = 2; // The delay in minutes
  Timer timer = new Timer();
  timer.schedule(new TimerTask() {
  @Override
@@ -122,7 +122,7 @@ public void fillForm(WebDriver driver) {
   //driver.close();                
   
   }
- }, 0, 1000 * 60 * MINUTES); // 1000 milliseconds in a second * 60 per minute * the MINUTES variable. 
+ }, 0, 1000 * 60 * minutes); // 1000 milliseconds in a second * 60 per minute * the minutes variable. 
 }
 
  public static void main(String[] args) {
